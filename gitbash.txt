@@ -1,0 +1,128 @@
+pupil@e219ws10 MINGW64 ~/Documents/NetBeansProjects/KTVR17/LibKtvr17 (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        renamed:    src/libproptvr16/App.java -> src/libktvr17/App.java
+        renamed:    src/libproptvr16/ConsoleInserter.java -> src/libktvr17/Conso                                                       leInserter.java
+        renamed:    src/libproptvr16/LibProPtvr16.java -> src/libktvr17/LibKtvr1                                                       7.java
+        renamed:    src/libproptvr16/SaverToFile.java -> src/libktvr17/SaverToFi                                                       le.java
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   src/libktvr17/App.java
+        modified:   src/libktvr17/ConsoleInserter.java
+        modified:   src/libktvr17/LibKtvr17.java
+        modified:   src/libktvr17/SaverToFile.java
+
+
+pupil@e219ws10 MINGW64 ~/Documents/NetBeansProjects/KTVR17/LibKtvr17 (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        renamed:    src/libproptvr16/App.java -> src/libktvr17/App.java
+        renamed:    src/libproptvr16/ConsoleInserter.java -> src/libktvr17/ConsoleInserter.java
+        renamed:    src/libproptvr16/LibProPtvr16.java -> src/libktvr17/LibKtvr17.java
+        renamed:    src/libproptvr16/SaverToFile.java -> src/libktvr17/SaverToFile.java
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   src/libktvr17/App.java
+        modified:   src/libktvr17/ConsoleInserter.java
+        modified:   src/libktvr17/LibKtvr17.java
+        modified:   src/libktvr17/SaverToFile.java
+
+
+pupil@e219ws10 MINGW64 ~/Documents/NetBeansProjects/KTVR17/LibKtvr17 (master)
+$ git add .
+
+pupil@e219ws10 MINGW64 ~/Documents/NetBeansProjects/KTVR17/LibKtvr17 (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        renamed:    src/libproptvr16/App.java -> src/libktvr17/App.java
+        renamed:    src/libproptvr16/ConsoleInserter.java -> src/libktvr17/ConsoleInserter.java
+        renamed:    src/libproptvr16/LibProPtvr16.java -> src/libktvr17/LibKtvr17.java
+        renamed:    src/libproptvr16/SaverToFile.java -> src/libktvr17/SaverToFile.java
+
+
+pupil@e219ws10 MINGW64 ~/Documents/NetBeansProjects/KTVR17/LibKtvr17 (master)
+$ git commit -m "Added interf Saveble in class App. java"
+[master 16b6d55] Added interf Saveble in class App. java
+ Committer: pupil <pupil@ivkhk.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 4 files changed, 5 insertions(+), 5 deletions(-)
+ rename src/{libproptvr16 => libktvr17}/App.java (99%)
+ rename src/{libproptvr16 => libktvr17}/ConsoleInserter.java (98%)
+ rename src/{libproptvr16/LibProPtvr16.java => libktvr17/LibKtvr17.java} (95%)
+ rename src/{libproptvr16/SaverToFile.java => libktvr17/saveble.java} (99%)
+
+pupil@e219ws10 MINGW64 ~/Documents/NetBeansProjects/KTVR17/LibKtvr17 (master)
+$ git remote remove origin
+
+pupil@e219ws10 MINGW64 ~/Documents/NetBeansProjects/KTVR17/LibKtvr17 (master)
+$ git remote
+
+pupil@e219ws10 MINGW64 ~/Documents/NetBeansProjects/KTVR17/LibKtvr17 (master)
+$ git push -u original master
+fatal: 'original' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+pupil@e219ws10 MINGW64 ~/Documents/NetBeansProjects/KTVR17/LibKtvr17 (master)
+$ git remote add origin https://github.com/Eriksut77/Ktvr17.git
+
+pupil@e219ws10 MINGW64 ~/Documents/NetBeansProjects/KTVR17/LibKtvr17 (master)
+$ git push -u original master
+fatal: 'original' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+pupil@e219ws10 MINGW64 ~/Documents/NetBeansProjects/KTVR17/LibKtvr17 (master)
+$ git remote add origin https://github.com/Eriksut77/Ktvr17.git
+fatal: remote origin already exists.
+
+pupil@e219ws10 MINGW64 ~/Documents/NetBeansProjects/KTVR17/LibKtvr17 (master)
+$ git push -u origin master
+Enumerating objects: 94, done.
+Counting objects: 100% (94/94), done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (92/92), done.
+Writing objects: 100% (94/94), 26.31 KiB | 1.46 MiB/s, done.
+Total 94 (delta 39), reused 0 (delta 0)
+remote: Resolving deltas: 100% (39/39), done.
+To https://github.com/Eriksut77/Ktvr17.git
+ * [new branch]      master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+
+pupil@e219ws10 MINGW64 ~/Documents/NetBeansProjects/KTVR17/LibKtvr17 (master)
+$
